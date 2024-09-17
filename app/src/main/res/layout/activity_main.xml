@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/tvNomeApp"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/game_console_svgrepo_com2"
+        android:contentDescription="@string/txt_nome_app"
+        android:drawablePadding="0dp"
+        android:fontFamily="casual"
+        android:forceDarkAllowed="false"
+        android:lineSpacingExtra="0dp"
+        android:paddingTop="47dp"
+        android:text="@string/txt_nome_app"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/cor_nome_app"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBarraStatus" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNomr"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_dica_nome"
+        android:imeOptions="actionDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeApp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_dica_nome"
+            android:maxLength="17"
+            android:textColor="@color/material_dynamic_neutral0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvInstrucao"
+        android:layout_width="wrap_content"
+        android:layout_height="143dp"
+        android:layout_marginTop="35dp"
+        android:background="#B3E5FC"
+        android:contentDescription="@string/txt_instrucao"
+        android:text="@string/txt_instrucao"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilNomr" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilQuantidade"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="@string/txt_dica_quantidade"
+        android:imeOptions="actionDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInstrucao">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_dica_quantidade"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:textColor="@color/material_dynamic_neutral0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="?android:attr/colorFocusedHighlight"
+        android:contentDescription="@string/btn_jogar"
+        android:drawableEnd="@drawable/tic_tac_toe"
+        android:letterSpacing="1"
+        android:text="@string/btn_jogar"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilQuantidade" />
+
+    <ImageView
+        android:id="@+id/ivBarraStatus"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:contentDescription="@string/txt_barra_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/borda_status_layout"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

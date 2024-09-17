@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PDM2AtvPratica29jun2024</string>
+    <string name="txt_recorte_logo">Recorte do logotipo da empresa</string>
+    <string name="txt_nome_app">Brincando\nde\nSomar</string>
+    <string name="txt_dica_nome">Digite seu nome...</string>
+    <string name="txt_instrucao">Informe a quantidade desejada\nde números para serem gerados.\nO objetivo é você memorizar os\nnúmeros gerados, somando seus\nvalores, e na tela seguinte\ndigitar o resultado da soma.</string>
+    <string name="txt_dica_quantidade">Digite a quantidade desejada...</string>
+    <string name="btn_jogar">JOGAR</string>
+    <string name="btn_verificar">CONFERIR</string>
+    <string name="btn_home">TELA INICIAL</string>
+    <string name="txt_atencao">Os números serão \nmostrados abaixo,\nS O M E    todos.</string>
+    <string name="txt_soma">Digite no espaço abaixo \no valor da soma \ndos números mostrados \nna tela anterior.</string>
+    <string name="txt_valor_soma">Resultado da soma...</string>
+    <string name="txt_desc_img_resultado">Imagem de um gato feliz (acertou)\n e um triste (errou).</string>
+    <string name="txt_qq_txt">Números gerados</string>
+    <string name="txt_barra_status">Barra de status customizada</string>
+</resources>
